@@ -1,0 +1,42 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+save_mode                                                                         0x02C8       2
+flagoo                                                                            0x02CA       2
+_base_y                                                                           0x02CC       4
+_lcd_x                                                                            0x02D0       1
+_lcd_y                                                                            0x02D1       1
+_lcd_maxx                                                                         0x02D2       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+password                                                                          0x0000      16
+length                                                                            0x0010       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+keydetect                                                                         R4,R5        2
+input                                                                             R7           1
+count                                                                             R6           1
+i                                                                                 R9           1
+flag                                                                              R10,R11      2
+Falling                                                                           R8           1
+mode                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+setKey                                                                            0x000E7    125
+ext_int0_isr                                                                      0x00164     34
+ext_int1_isr                                                                      0x00186     10
+ext_int2_isr                                                                      0x00190     18
+main                                                                              0x001A2    270
+_lcd_write_nibble_G103                                                            0x002B0     20
+_lcd_write_data                                                                   0x002C4     12
+lcd_gotoxy                                                                        0x002D0     17
+lcd_clear                                                                         0x002E1     14
+lcd_putchar                                                                       0x002EF     32
+lcd_puts                                                                          0x0030F     17
+lcd_init                                                                          0x00320     47
